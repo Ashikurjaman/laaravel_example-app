@@ -26,10 +26,19 @@ class HomeController extends Controller
     // // return "my name is {$name} i am {$age} years old.";
     // return view('sold',$data);
 
-    $n= $request->header('name');
-    $a= $request->header('age');
+    $pin= $request->header('pin');
+    $city= $request->input('city');
+    $postcode= $request->input('postcode');
+    $n= $request->name;
+    $a= $request->age;
 
-    return "name is ${n} , years is ${a}";
+    return array(
+        "pin"=>$pin,
+        "city"=>$city,
+        "postcode"=>$postcode,
+        "nAme"=>$n,
+        "aGe"=>$a
+    );
 
  }
 }

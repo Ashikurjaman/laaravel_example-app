@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 Route::get("/home",[HomeController::class,'index']);
 // Route::get("/sold/{name}/{age}",[HomeController::class,'sold']);
-Route::get('/sold',[HomeController::class,'sold']);
+Route::get('/sold/{name}/{age}',[HomeController::class,'sold']);
