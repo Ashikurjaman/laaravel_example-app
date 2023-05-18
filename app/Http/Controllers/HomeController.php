@@ -10,7 +10,7 @@ class HomeController extends Controller
  public function index(){
     return view('home');
  }
- function sold(Request $request):bool{
+ function sold(Request $request){
 
     // $name =$request->name;
     // $age =$request->age;
@@ -66,14 +66,27 @@ class HomeController extends Controller
 
 
 
-        $img = $request->file('photo');
-        $img->move(public_path('upload'),$img->getClientOriginalName());
+        // $img = $request->file('photo');
+        // $img->storeAs('upload',$img->getClientOriginalName());
+        // $img->move(public_path('upload'),$img->getClientOriginalName());
 
 
-            return true;
+        //     return true;
+
+
+            // return $request->ip();
+            // return $request->getAcceptableContentTypes();
+
+            // if($request->accepts(['text/html'])){
+            //     return 1;
+
+            // }
+            // else {
+            //       return 0;
+            // }
 
 
 
-
+            return $request->cookie('Cookie_1');
  }
 }
