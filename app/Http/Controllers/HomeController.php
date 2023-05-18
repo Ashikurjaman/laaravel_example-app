@@ -87,6 +87,6 @@ class HomeController extends Controller
 
 
 
-            return $request->cookie('Cookie_1');
+            // return $request->cookie('Cookie_1');
  }
 }
