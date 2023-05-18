@@ -21,7 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get("/home",[HomeController::class,'index']);
 // Route::get("/sold/{name}/{age}",[HomeController::class,'sold']);
-Route::get('/sold/{name}/{age}',[HomeController::class,'sold']);
+Route::post('/sold',[HomeController::class,'sold']);
 
 
 
