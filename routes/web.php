@@ -19,4 +19,6 @@ Route::get('/', function () {
 });
 Route::get("/home",[HomeController::class,'index']);
 // Route::get("/sold/{name}/{age}",[HomeController::class,'sold']);
-Route::post('/sold',[HomeController::class,'sold']);
+// Route::post('/sold',[HomeController::class,'sold']);
+Route::get('/sold1',[HomeController::class,'sold1']);
+Route::get('/sold2',[HomeController::class,'sold2']);

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 
@@ -10,7 +11,7 @@ class HomeController extends Controller
  public function index(){
     return view('home');
  }
- function sold(Request $request){
+//  function sold(Request $request){
 
     // $name =$request->name;
     // $age =$request->age;
@@ -88,5 +89,28 @@ class HomeController extends Controller
 
 
             // return $request->cookie('Cookie_1');
- }
+
+
+
+                    // $code=203;
+                    // $content= array("name"=> "jack", 'city'=>'london');
+
+                    // return response()->json($content,$code);
+
+
+
+
+
+//  }
+
+function sold1(){
+
+    return redirect('/sold2');
+
+}
+function sold2(){
+
+return 'hello2';
+}
+
 }
